@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_back">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:background="@color/primary_dark"
+        android:paddingTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <RadioButton
+                android:id="@+id/rb_back"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:drawableStart="@mipmap/back"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="报案快赔"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_text_size" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_report"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <RelativeLayout
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="11dp"
+                            android:background="@drawable/dotted_line_vertical_shape">
+                        </View>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/time_axis_shape2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="报案"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="6dp"
+                    android:elevation="3dp"
+                    android:background="@drawable/lc_white_circle"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_check_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="您尚未提交事故照片与视频"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_report_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:button="@null"
+                            android:drawableStart="@mipmap/next_right" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/gray_back"></View>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp">
+
+                        <ImageView
+                            android:id="@+id/iv_report_status"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/report1" />
+
+                        <ImageView
+                            android:id="@+id/iv_report_icon"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@mipmap/unit_icon" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/iv_report_icon"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/tv_unit_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="单位名称"
+                                    android:textColor="@color/black"
+                                    android:textSize="13sp" />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="事故专员姓名："
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_server_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="小橙子"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp" />
+
+                                <ImageView
+                                    android:id="@+id/iv_server_phone_call"
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_toRightOf="@id/tv_unit_name"
+                                    android:src="@mipmap/phone_call" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_insnumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="报案号："
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_report_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="111111"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="报案时间："
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_report_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2018-11-14 17:11:30"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="事故时间："
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_accident_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2018-11-14 17:11:30"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="事故地点："
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_accident_place"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:text="上海市徐汇区天目西路290号"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_payment"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/rl_report">
+
+                <RelativeLayout
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/dotted_line_vertical_shape">
+                        </View>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/time_axis_shape2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="赔付"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="147dp"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="6dp"
+                    android:elevation="3dp"
+                    android:background="@drawable/lc_white_circle">
+
+                    <ImageView
+                        android:id="@+id/iv_payment_status"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/report6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tv_payment_tip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:button="@null"
+                                android:drawableStart="@mipmap/next_right" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/gray_back"></View>
+                        <LinearLayout
+                            android:id="@+id/ll_success"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+                                <TextView
+                                    android:id="@+id/assessment"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:gravity="center_vertical"
+                                    android:text="定损日期："
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_assessment_date"
+                                    android:layout_centerVertical="true"
+                                    android:background="@color/white"
+                                    android:layout_toRightOf="@+id/assessment"
+                                    android:gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp"
+                                    android:text="2018-11-14 17:35:30"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+                                <TextView
+                                    android:id="@+id/assessment_money"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:gravity="center_vertical"
+                                    android:text="定损金额："
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_assessment_money"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@+id/assessment_money"
+                                    android:gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/primary_dark"
+                                    android:textStyle="bold"
+                                    android:textSize="13sp"
+                                    android:text="0"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/tv_assessment_money"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="3dp"
+                                    android:text="元"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/black"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+                                <TextView
+                                    android:id="@+id/close_date"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:gravity="center_vertical"
+                                    android:text="结案日期："
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_close_date"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@+id/close_date"
+                                    android:gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp"
+                                    android:text="2018-11-14 17:35:30"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+                                <TextView
+                                    android:id="@+id/close_money"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:gravity="center_vertical"
+                                    android:text="结案金额："
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_close_money"
+                                    android:layout_centerVertical="true"
+                                    android:background="@color/white"
+                                    android:layout_toRightOf="@+id/close_money"
+                                    android:gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/primary_dark"
+                                    android:textSize="13sp"
+                                    android:text="0"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_toRightOf="@+id/tv_close_money"
+                                    android:layout_centerVertical="true"
+                                    android:text="元"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/one_key_gray_text"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/ll_failure"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+                                <TextView
+                                    android:id="@+id/assessment_failure"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="定损日期："
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_assessment_date_failure"
+                                    android:layout_centerVertical="true"
+                                    android:background="@color/white"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_toRightOf="@+id/assessment_failure"
+                                    android:gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp"
+                                    android:text="2018-11-14 17:35:30"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+                                <TextView
+                                    android:id="@+id/assessment_money_failure"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="定损失败原因类型："
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_assessment_money_failure"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/assessment_money_failure"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/one_key_gray_text"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+                                <TextView
+                                    android:id="@+id/close_date_failure"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="定损失败原因："
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_close_date_failure"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_toRightOf="@+id/close_date_failure"
+                                    android:gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/ll_dropped"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+                                <TextView
+                                    android:id="@+id/assessment_dropped"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="销案日期："
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_assessment_date_dropped"
+                                    android:layout_centerVertical="true"
+                                    android:background="@color/white"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_toRightOf="@+id/assessment_dropped"
+                                    android:gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp"
+                                    android:text="2018-11-14 17:35:30"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+                                <TextView
+                                    android:id="@+id/assessment_money_dropped"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="销案原因类型："
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_assessment_money_dropped"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/assessment_money_dropped"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/one_key_gray_text"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+                                <TextView
+                                    android:id="@+id/close_date_dropped"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="销案原因："
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_close_date_dropped"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_toRightOf="@+id/close_date_dropped"
+                                    android:gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/one_key_gray_text"
+                                    android:textSize="12sp"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_repair"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/rl_payment">
+                <RelativeLayout
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/dotted_line_vertical_shape">
+                        </View>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/time_axis_shape2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="维修"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/ll_repair"
+                    android:layout_width="match_parent"
+                    android:layout_height="147dp"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="6dp"
+                    android:elevation="3dp"
+                    android:background="@drawable/lc_white_circle">
+
+                    <ImageView
+                        android:id="@+id/iv_repair_status"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/repair6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/plan_hand_car_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="预计交车日期："
+                                android:textColor="@color/one_key_gray_text"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_plan_hand_car_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/plan_hand_car_date"
+                                android:background="@color/white"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/one_key_gray_text"
+                                android:textSize="12sp" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:button="@null"
+                                android:drawableStart="@mipmap/next_right" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tv_repair_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="维修完毕日期："
+                                android:textColor="@color/one_key_gray_text"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_finish_repair_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/tv_repair_status"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/one_key_gray_text"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/real_hand_car_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="实际交车日期："
+                                android:textColor="@color/one_key_gray_text"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_real_hand_car_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/real_hand_car_date"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/one_key_gray_text"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/repair_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="24dp"
+                                android:gravity="center_vertical"
+                                android:text="维修金额："
+                                android:textColor="@color/one_key_gray_text"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_repair_money"
+                                android:layout_centerVertical="true"
+                                android:background="@color/white"
+                                android:layout_toRightOf="@+id/repair_money"
+                                android:gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/primary_dark"
+                                android:textSize="13sp"
+                                android:text="0"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_toRightOf="@+id/tv_repair_money"
+                                android:layout_centerVertical="true"
+                                android:text="元"
+                                android:textSize="12sp"
+                                android:textColor="@color/one_key_gray_text"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/repair_money_tip"
+                                android:layout_marginLeft="24dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="金额说明："
+                                android:textColor="@color/one_key_gray_text"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_repair_money_tip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/repair_money_tip"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/one_key_gray_text"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_comment"
+                android:layout_below="@+id/rl_repair"
+                android:layout_width="match_parent"
+                android:layout_height="155dp">
+                <RelativeLayout
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/dotted_line_vertical_shape">
+                        </View>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/time_axis_shape2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="评价"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/ll_comment"
+                android:layout_width="match_parent"
+                android:layout_height="142dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:elevation="3dp"
+                android:background="@drawable/lc_white_circle">
+
+                <ImageView
+                    android:id="@+id/iv_comment_status"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/comment1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv_comment_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="维修完毕才可以评价哦"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+
+                        <RadioButton
+                            android:id="@+id/rb_comment_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:button="@null"
+                            android:drawableStart="@mipmap/next_right" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/quality_of_service"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="服务质量："
+                                android:textColor="@color/one_key_gray_text"
+                                android:textSize="12sp" />
+
+                            <com.example.administrator.lc_dvr.common.customview.RatingBar
+                                android:id="@+id/quality_rating_bar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/quality_of_service"
+                                app:selectedNumber="0"
+                                app:starDistance="8dp"
+                                app:starEmptyRes="@mipmap/star_empty"
+                                app:starSelectedRes="@mipmap/star_full" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/attitude_of_service"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="服务态度："
+                                android:textColor="@color/one_key_gray_text"
+                                android:textSize="12sp" />
+
+                            <com.example.administrator.lc_dvr.common.customview.RatingBar
+                                android:id="@+id/attitude_rating_bar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/attitude_of_service"
+                                app:selectedNumber="0"
+                                app:starDistance="8dp"
+                                app:starEmptyRes="@mipmap/star_empty"
+                                app:starSelectedRes="@mipmap/star_full" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_below="@+id/rl_comment"
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+                <RelativeLayout
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            android:background="@drawable/dotted_line_vertical_shape">
+                        </View>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_blue_left"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/time_axis_shape2"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="即将上线"
+                            android:maxEms="2"
+                            android:textColor="@color/white"
+                            android:textSize="8sp" />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_marginTop="29dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_toRightOf="@+id/ll_blue_left"
+                        android:background="@drawable/dotted_line_across_shape">
+
+                    </View>
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lc_white_circle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="@dimen/dimen_18dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@mipmap/roadside_assistance" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@mipmap/take_car" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@mipmap/scooter" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        android:src="@mipmap/people_service" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="19dp"
+                    android:text="更多服务敬请期待......"
+                    android:textColor="@color/bottom_text"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/transparent_gray"
+    android:layout_height="match_parent">
+    <View
+        android:onClick="closeAccidentSituation"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <RelativeLayout
+        android:background="@drawable/accident_situation_shape"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="266dp">
+        <TextView
+            android:id="@+id/accidentSituationTitle"
+            android:textColor="@color/black"
+            android:text="@string/accidentResponsibilitySelect"
+            android:layout_marginTop="55dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/closeAccidentSituation"
+            android:onClick="ivCloseAccidentSituation"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@mipmap/case_delete"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="95dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="center_vertical">
+                <Button
+                    android:onClick="accidentSwitchLeft"
+                    android:id="@+id/switchLeft"
+                    android:paddingLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:drawableStart="@mipmap/left"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:onClick="accidentSwitchRight"
+                    android:id="@+id/switchRight"
+                    android:paddingRight="10dp"
+                    android:drawableEnd="@mipmap/right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+                    <Button
+                        android:onClick="accidentBtn1Tap"
+                        android:id="@+id/accidentBtn1"
+                        android:textColor="#2196F3"
+                        android:textSize="14sp"
+                        android:text="@string/oneCar"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/textview_button_normal_gray"
+                        android:layout_width="105dp"
+                        android:layout_height="53dp" />
+                    <Button
+                        android:onClick="accidentBtn2Tap"
+                        android:id="@+id/accidentBtn2"
+                        android:text="@string/manyCar"
+                        android:textColor="#2196F3"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/textview_button_normal_gray"
+                        android:layout_width="105dp"
+                        android:layout_height="53dp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_marginBottom="4dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <Button
+                            android:onClick="accidentBtn3Tap"
+                            android:id="@+id/accidentBtn3"
+                            android:textColor="#2196F3"
+                            android:textSize="14sp"
+                            android:text="@string/fullResponsibility"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/textview_button_normal_gray"
+                            android:layout_width="105dp"
+                            android:layout_height="25dp" />
+                        <Button
+                            android:onClick="accidentBtn4Tap"
+                            android:id="@+id/accidentBtn4"
+                            android:text="@string/mainResponsibility"
+                            android:textColor="#2196F3"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/textview_button_normal_gray"
+                            android:layout_width="105dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <Button
+                            android:onClick="accidentBtn5Tap"
+                            android:id="@+id/accidentBtn5"
+                            android:textColor="#2196F3"
+                            android:textSize="14sp"
+                            android:text="@string/sameResponsibility"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/textview_button_normal_gray"
+                            android:layout_width="105dp"
+                            android:layout_height="25dp" />
+                        <Button
+                            android:onClick="accidentBtn6Tap"
+                            android:id="@+id/accidentBtn6"
+                            android:text="@string/secondaryResponsibility"
+                            android:textColor="#2196F3"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/textview_button_normal_gray"
+                            android:layout_width="105dp"
+                            android:layout_height="25dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:onClick="closeAccidentSituation"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</LinearLayout>

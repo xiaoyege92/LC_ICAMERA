@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/button_color"/>
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        >
+
+        <View
+            android:layout_centerVertical="true"
+            android:layout_width="4dp"
+            android:layout_height="15dp"
+            android:background="@color/orange" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:background="@color/white"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:text="日期时间："
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/rejectDate"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:layout_marginLeft="150dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/view_color" />
+
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        >
+
+        <View
+            android:layout_centerVertical="true"
+            android:layout_width="4dp"
+            android:layout_height="15dp"
+            android:background="@color/orange" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:background="@color/white"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:text="用户类型/用户名："
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/rejectUser"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:layout_marginLeft="150dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/view_color" />
+
+
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <View
+            android:layout_marginTop="17dp"
+            android:layout_width="4dp"
+            android:layout_height="15dp"
+            android:background="@color/orange" />
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:background="@color/white"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:text="意见："
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/rejectOpinion"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:layout_marginLeft="150dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+</LinearLayout>

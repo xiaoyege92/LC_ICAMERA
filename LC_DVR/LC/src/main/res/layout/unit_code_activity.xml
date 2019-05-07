@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_gray">
+    <RelativeLayout
+        android:background="@drawable/help_radius"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+    <ImageView
+        android:id="@+id/closeUnitCode"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/case_delete"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:id="@+id/parkingCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/closeUnitCode"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/parking_card"/>
+
+    <TextView
+        android:id="@+id/cardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parkingCard"
+        android:layout_centerHorizontal="true"
+        android:text="请输入位于停车卡上的四位单位快捷码"
+        android:textColor="@color/black"
+        android:textSize="@dimen/register_card_text"/>
+
+        <com.example.administrator.lc_dvr.common.customview.SecurityCodeView
+            android:id="@+id/scv_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cardText">
+        </com.example.administrator.lc_dvr.common.customview.SecurityCodeView>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

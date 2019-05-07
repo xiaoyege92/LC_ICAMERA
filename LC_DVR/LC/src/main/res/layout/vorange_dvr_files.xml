@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:background="@color/primary_dark"
+        android:paddingTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <RadioButton
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:drawableStart="@mipmap/back"
+                android:onClick="closeVorangeDvrFiles"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/daza_rec"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <RadioButton
+                android:id="@+id/rb_wifi_disconnect"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:drawableEnd="@mipmap/wifi_disconnect" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+  <!--  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/theme_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:background="@color/primary_dark"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/lc_dvr_video"
+                    android:onClick="fileSelector"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    &lt;!&ndash;<ImageView
+                        android:src="@mipmap/lc_dvr_file"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />&ndash;&gt;
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:text="@string/daza_rec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/lc_dvr_video"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/dvr_selector"
+                    android:layout_width="60dp"
+                    android:layout_height="1.5dp"
+                    android:background="@color/white" />
+                &lt;!&ndash;<View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/button_color" />&ndash;&gt;
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:background="@color/primary_dark"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/lc_load_video"
+                    android:onClick="fileSelector"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    &lt;!&ndash;<ImageView
+                        android:src="@mipmap/lc_load_file"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />&ndash;&gt;
+                    <TextView
+
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:text="@string/bendiwenjian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_below="@+id/lc_load_video"
+                    android:layout_marginTop="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    android:id="@+id/load_selector"
+                    android:layout_width="60dp"
+                    android:layout_height="1.5dp"
+                    android:background="@color/white" />
+                &lt;!&ndash;<View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/button_color" />&ndash;&gt;
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/lc_file_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    </RelativeLayout>
+
+</LinearLayout>

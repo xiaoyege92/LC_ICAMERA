@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/transparent_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="268dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quxiao"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/one_key_gray_text"/>
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/queding"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/primary_dark"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/normal_black"
+                android:textSize="12sp"
+                android:text="用户昵称"/>
+            <EditText
+                android:imeActionLabel="确定"
+                android:imeOptions="actionDone"
+                android:id="@+id/et_nick_name"
+                android:hint="请输入用户昵称"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                style="?android:attr/textViewStyle"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:id="@+id/remark"
+                android:textColor="@color/normal_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="用户备注"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_user_remark"
+                android:layout_toRightOf="@+id/remark"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="请输入用户备注"
+                android:gravity="start"
+                android:textColor="@color/normal_black"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edit_border_bg"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

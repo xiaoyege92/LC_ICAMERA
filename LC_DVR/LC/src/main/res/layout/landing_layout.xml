@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:onClick="landBackTap"
+        android:visibility="gone"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/land_left"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/lv_cheng_logo" />
+
+    <LinearLayout
+        android:layout_marginTop="180dp"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <!--<View
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:background="@color/orange" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:text="@string/phoneNumber"
+                android:textSize="17sp" />-->
+
+            <EditText
+                android:imeActionLabel="确定"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@mipmap/phone"
+                android:drawablePadding="10dp"
+                android:background="@null"
+                style="?android:attr/textViewStyle"
+                android:layout_marginLeft="10dp"
+                android:hint="@string/phoneNumberHint"
+                android:gravity="center_vertical"
+                android:id="@+id/phoneText_dl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/land_text_size" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/view_color" />
+
+        <LinearLayout
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <!--<View
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:background="@color/orange" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:text="@string/verificationCode"
+                android:textSize="17sp" />
+-->
+            <EditText
+                android:imeActionLabel="确定"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@mipmap/auth_code"
+                android:drawablePadding="10dp"
+                android:id="@+id/verificationText_dl"
+                android:hint="@string/verificationCodeHint"
+                android:background="@null"
+                style="?android:attr/textViewStyle"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/land_text_size" />
+
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_width="0.2dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/view_color" />
+
+            <TextView
+                android:onClick="verificationTap2"
+                android:id="@+id/verificationButton_dl"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/land_text_size"
+                android:text="@string/getVerificationCode"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/view_color" />
+
+        <Button
+            android:id="@+id/signInBtn"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:onClick="signInTap"
+            android:textSize="@dimen/land_btn_login"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/unenable_btn_text"
+            android:background="@drawable/lc_radius"
+            android:text="@string/userLanding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height_size" />
+
+        <RelativeLayout
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            >
+
+            <Button
+                android:onClick="inRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:text="@string/newUser"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/btn_below_size" />
+
+            <Button
+                android:onClick="getHelp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/primary_dark"
+                android:background="@null"
+                android:textSize="@dimen/btn_below_size"
+                android:text="@string/unableToLand"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

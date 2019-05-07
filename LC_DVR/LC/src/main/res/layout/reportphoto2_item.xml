@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="65dp"
+    android:paddingRight="6dp">
+
+    <ImageView
+        android:layout_width="66dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/dotted_line" />
+
+    <ImageView
+        android:id="@+id/report_image2"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/report_image" />
+
+    <ImageView
+        android:id="@+id/delete_image2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="60dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/delete_image"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="60dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/switch_image"
+        android:visibility="gone" />
+</RelativeLayout>

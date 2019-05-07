@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_back" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_alignParentStart="true"
+            android:background="@color/primary_dark"
+            android:paddingTop="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_back"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:drawableStart="@mipmap/back"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="配置信息"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_text_size" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_basic_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:onClick="onlineSurveySelector">
+
+                    <TextView
+                        android:id="@+id/tv_basic_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="基本信息"
+                        android:textColor="@color/orange"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:id="@+id/basic_info_selector"
+                        android:layout_width="45dp"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/tv_basic_info"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/orange" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_ins_info"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="onlineSurveySelector">
+
+                    <TextView
+                        android:id="@+id/tv_ins_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="投保信息"
+                        android:textColor="@color/normal_black"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:id="@+id/ins_info_selector"
+                        android:layout_width="45dp"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/tv_ins_info"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/orange"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_machine_code"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:onClick="onlineSurveySelector">
+
+                    <TextView
+                        android:id="@+id/tv_machine_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="机身串码"
+                        android:textColor="@color/normal_black"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:visibility="gone"
+                        android:id="@+id/machine_code_selector"
+                        android:layout_width="45dp"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/tv_machine_code"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/orange" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/config_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/report_action"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_back"
+        android:elevation="2dp">
+
+        <Button
+            android:id="@+id/btn_upload"
+            style="@style/TvNextButton2"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="一键上传"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+</RelativeLayout>

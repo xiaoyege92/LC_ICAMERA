@@ -1,0 +1,8 @@
+.idea/
+.gradle/
+*/build/*
+*/gradle/*
+*/release/*
+*/libs/*
+*.apk
+*.so

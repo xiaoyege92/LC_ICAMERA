@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.administrator.lc_dvr">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取WIFI信息状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 设置允许改变配置信息的权限 -->
+    <uses-permission
+        android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission
+        android:name="android.permission.MANAGE_MEDIA_PROJECTION"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name="org.videolan.libvlc.VLCApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/partnerwin_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:icon, android:theme,android:allowBackup">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="01d91738382374c60388f6708e076ff6" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="UsMNaYb1W5ke55DNEelk1uPxYFvuUAUW" />
+        <!-- 您从百度网站获取的APP KEY，根据实际您的APP申请的APP_KEY进行修改 -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="21ec8d8eab" />
+
+        <!-- 渠道商编号 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="Baidu Market" />
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+
+        <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true" />
+
+        <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="true" />
+
+        <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GuideViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_dvr_setting.VorangeDvrSetting"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.login_registration.Landing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.login_registration.Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.login_registration.Scan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.login_registration.TakePhone"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".module.login_registration.UnitCode"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".module.login_registration.RightMark"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".module.lc_dvr.ReportHelp"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".module.lc_dvr.Advertisement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_dvr.GuideView2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.login_registration.ProtocolContent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.login_registration.InsuranceCompanyList"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".module.lc_dvr_files_manager.VorangeDvrFiles"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_report.OnlineSurvey2"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_report.TakeReportPhoto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_report.RecordingFiles"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_report.ImmediatelyReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_report.Upgrade2"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".module.lc_report.LookPhoto"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_report.LookImageList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_dvr_recording.VorangeDvrRecording"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".module.lc_dvr_files_manager.screen_recording.RecorderPlayerActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".module.lc_dvr_files_manager.SimplePlayer"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".module.lc_dvr_files_manager.PlayerActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".module.lc_report.ReportIjkPlayerActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".module.LocalVideoFileActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_help.UnitDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_help.UnitMessageDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_help.ReportSuccess"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_help.FastCompensate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_help.PaymentDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_help.RepairDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_report.Personal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_report.LookIconImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_report.CarConfig"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_report.CommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_report.ReportInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".module.lc_report.AccidentInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".module.lc_report.RemarkInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+
+        <service android:name=".service.ScreenRecordService" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <service android:name="com.amap.api.location.APSService" />
+        <service android:name="com.varma.android.aws.service.HTTPService" />
+
+        <activity
+            android:name=".module.lc_report.CarConfigDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.lc_help.RepairProgressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".module.lc_report.UserInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".module.lc_report.RevokeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" />
+        <activity android:name=".module.lc_report.CommentSuccessActivity" />
+        <activity
+            android:name=".module.lc_help.OneKeyHelpActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_one_key_help"
+            android:theme="@style/FullscreenTheme"></activity>
+    </application>
+
+</manifest>

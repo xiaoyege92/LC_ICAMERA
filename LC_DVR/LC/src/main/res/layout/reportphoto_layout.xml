@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/moreCarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/photo1Title"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:text="撞击部位45度照片："
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView1"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="65dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/view_color" />
+
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+
+                    <TextView
+                        android:id="@+id/photo2Title"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:text="自己车带牌照照片："
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_wholeCar"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp">
+                    <ImageView
+                        android:id="@+id/wholeCar_line"
+                        android:layout_marginTop="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/dotted_line"
+                        android:layout_width="66dp"
+                        android:layout_height="56dp" />
+                    <ImageView
+                        android:id="@+id/wholeCarPhoto"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/report_image"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp" />
+                    <ImageView
+                        android:id="@+id/wholeCarPhotoSwitch"
+                        android:layout_marginLeft="60dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/switch_image"
+                        android:visibility="gone"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/view_color" />
+
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/photo3Title"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:text="对方车带牌照照片："
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView2"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="65dp">
+
+                </android.support.v7.widget.RecyclerView>
+                <View
+                    android:id="@+id/manyCarsView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/view_color" />
+
+                <RelativeLayout
+                    android:id="@+id/manyCarsView2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/photo4Title"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:text="自己车受损部位照片："
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView4"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="65dp">
+
+                </android.support.v7.widget.RecyclerView>
+                <View
+                    android:id="@+id/manyCarsView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/view_color" />
+
+                <RelativeLayout
+                    android:id="@+id/manyCarsView5"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/photo5Title"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:text="对方车受损部位照片："
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView5"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="65dp">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/oneCarLayout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:text="被撞物体照片："
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp">
+
+                </android.support.v7.widget.RecyclerView>
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:text="全车45度照片："
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp">
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/dotted_line"
+                        android:layout_width="66dp"
+                        android:layout_height="56dp" />
+                    <ImageView
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/report_image"
+                        android:layout_width="64dp"
+                        android:layout_height="41dp" />
+                    <ImageView
+                        android:layout_marginLeft="60dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/switch_image"
+                        android:visibility="gone"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:text="受损部位照片："
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/report_video_line"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/gray_back" />
+
+            <RelativeLayout
+                android:id="@+id/report_video_view"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="行车记录事故小视频："
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/report_video_text"
+                android:textColor="@color/xian_color"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="9sp"
+                android:text="上传事故片段，成为后期理赔的重要依据，减少因一些细节问题导致的争议"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.example.administrator.lc_dvr.common.utils.HorizontalListView
+                android:id="@+id/reportPhotoList3"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+            </com.example.administrator.lc_dvr.common.utils.HorizontalListView>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/report_action"
+        android:background="@color/gray_back"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:elevation="2dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/oneKeyReport"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            style="@style/TvNextButton2"
+            android:text="一键上传"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+

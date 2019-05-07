@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:background="@color/primary_dark"
+        android:paddingTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <RadioButton
+                android:id="@+id/rb_back"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:drawableStart="@mipmap/back"
+                android:paddingLeft="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="单位通知"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_text_size" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_two_text_size"
+            android:text="通知标题"/>
+        <TextView
+            android:id="@+id/tv_message_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_message_title"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/one_key_gray_text"
+            android:textSize="@dimen/content_text_size"
+            android:text="2018-11-8 10:25:30"/>
+
+        <ImageView
+            android:id="@+id/iv_message_picture"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_message_date"
+            android:layout_marginTop="7dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/unit_bg"/>
+        <TextView
+            android:id="@+id/tv_message_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_message_picture"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_two_text_size"
+            android:text="通知内容："/>
+        <TextView
+            android:id="@+id/tv_message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_message_content_title"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/content_text_size"
+            android:textColor="@color/one_key_gray_text"
+            android:lineSpacingMultiplier="1.6"
+            android:text="消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容"/>/>
+    </RelativeLayout>
+
+</LinearLayout>

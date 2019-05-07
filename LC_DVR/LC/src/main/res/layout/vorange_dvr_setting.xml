@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="60.1dp"
+        android:layout_alignParentStart="true"
+        android:background="@color/primary_dark"
+        android:paddingTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <RadioButton
+                android:onClick="closeVorangeDvrSetting"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:drawableStart="@mipmap/back"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/daza_setting"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_text_size" />
+            <RadioButton
+                android:id="@+id/rb_wifi_disconnect"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:drawableEnd="@mipmap/wifi_disconnect" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="13dp"
+            android:background="@color/orange" />
+
+        <TextView
+            android:textColor="@color/normal_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:text="@string/wifi_name"
+            android:textSize="13sp" />
+
+        <TextView
+            android:textColor="@color/one_key_gray_text"
+            android:gravity="center_vertical"
+            android:id="@+id/wifiName"
+            android:layout_marginLeft="50dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VORANGE-XXXX"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/view_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="13dp"
+            android:background="@color/orange" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:clickable="false"
+            android:text="@string/wifi_password"
+            android:textSize="13sp" />
+
+        <TextView
+            android:textColor="@color/one_key_gray_text"
+            android:layout_marginLeft="50dp"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="12345678"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/view_color" />
+
+    <LinearLayout
+        android:id="@+id/recodeis_lint"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp" >
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="13dp"
+            android:background="@color/orange" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:text="@string/lc_dvr_voice"
+            android:textColor="@color/normal_black"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/lc_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:onClick="setLcVoice"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/voice_off" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/view_color" />
+
+    <LinearLayout
+        android:id="@+id/recodetype_lint"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="13dp"
+            android:background="@color/orange" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:text="@string/lc_dvr_format"
+            android:textColor="@color/normal_black"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/lc_video_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:onClick="setLcVideo"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/video_1080p" />
+    </LinearLayout>
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/lc_video_tip"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="9sp"
+        android:text="@string/lc_video_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/view_color" />
+
+    <LinearLayout
+        android:onClick="formatSD"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="13dp"
+            android:background="@color/orange" />
+
+        <TextView
+            android:textColor="@color/normal_black"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:text="格式化SD卡"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:src="@mipmap/unit_detail" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

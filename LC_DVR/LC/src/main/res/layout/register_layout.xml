@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:onClick="registerBackTap"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:drawableLeft="@mipmap/land_left"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/lv_cheng_logo" />
+
+    <LinearLayout
+        android:layout_marginTop="180dp"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+           <!-- <View
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:background="@color/orange" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:text="@string/unitShortcutCode"
+                android:textSize="17sp" />-->
+
+            <EditText
+                android:background="@null"
+                android:imeActionLabel="确定"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@mipmap/unit_code"
+                android:drawableRight="@mipmap/next_right"
+                android:drawablePadding="10dp"
+                style="?android:attr/textViewStyle"
+                android:hint="@string/unitShortcutCodeHint"
+                android:maxLines="1"
+                android:inputType="text"
+                android:gravity="center_vertical"
+                android:id="@+id/shortcutCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/land_text_size" />
+
+            <!--<ImageView
+                android:onClick="toScan"
+                android:background="@mipmap/scanning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/xian_color"
+            android:background="@color/white"
+            android:id="@+id/insuranceCompany"
+            android:visibility="gone"
+            android:layout_marginLeft="139dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="@dimen/land_text_size"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+       <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/view_color" />-->
+
+        <!--<LinearLayout
+            android:onClick="getInsuranceCompany"
+            android:id="@+id/insuranceSelect"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:background="@color/orange" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:text="@string/insuranceCompany"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/insuranceCompanyName"
+                android:textColor="@color/black"
+                android:text="@string/insuranceCompanyHint"
+                android:layout_marginLeft="27dp"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:src="@mipmap/unit_detail" />
+
+        </LinearLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/view_color" />
+
+        <LinearLayout
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <!--<View
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:background="@color/orange" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:text="@string/phoneNumber"
+                android:textSize="17sp" />-->
+
+            <EditText
+                android:imeActionLabel="确定"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@mipmap/phone"
+                android:drawablePadding="10dp"
+                android:id="@+id/phoneText"
+                android:background="@null"
+                style="?android:attr/textViewStyle"
+                android:hint="@string/phoneNumberHint"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/land_text_size" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/view_color" />
+
+        <LinearLayout
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <!--<View
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:background="@color/orange" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:text="@string/verificationCode"
+                android:textSize="17sp" />-->
+
+            <EditText
+                android:imeActionLabel="确定"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@mipmap/auth_code"
+                android:drawablePadding="10dp"
+                android:id="@+id/verificationCode"
+                android:hint="@string/verificationCodeHint"
+                android:background="@null"
+                style="?android:attr/textViewStyle"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/land_text_size" />
+
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_width="0.2dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/view_color" />
+
+            <TextView
+                android:onClick="verificationTap"
+                android:id="@+id/verificationButton"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/land_text_size"
+                android:text="@string/getVerificationCode"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/view_color" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:onClick="agreementTap"
+                android:src="@mipmap/agreement_select"
+                android:id="@+id/agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:text="@string/agreementHint"
+                android:maxLines="1"
+                android:textSize="@dimen/btn_below_size" />
+
+            <Button
+                android:onClick="protocolContent"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/primary_dark"
+                android:background="@null"
+                android:textSize="@dimen/btn_below_size"
+                android:text="@string/agreementContent"
+                android:maxLines="1"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:onClick="registeredUserTap"
+            android:textSize="@dimen/land_btn_login"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:background="@drawable/lc_radius"
+            android:text="@string/registerUser"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height_size" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/tv_select_text"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clickable="false"
+                android:text="选择"
+                android:maxLines="1"
+                android:textSize="@dimen/btn_below_size" />
+
+            <TextView
+                android:id="@+id/btn_select_company"
+                android:background="@null"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/btn_below_size"
+                android:text="投保公司"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:maxLines="1"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/tv_help_text"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:clickable="false"
+                android:maxLines="1"
+                android:textSize="@dimen/btn_below_size"
+                android:text="，有助您获得更多服务"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_unable_register"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/primary_dark"
+                    android:background="@null"
+                    android:textSize="@dimen/btn_below_size"
+                    android:text="遇到问题，无法注册"
+                    android:maxLines="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_unit_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/bottom_text"
+        android:background="@null"
+        android:textSize="@dimen/btn_below_size"
+        android:text="单位名称"
+        android:visibility="gone"
+        android:maxLines="1"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

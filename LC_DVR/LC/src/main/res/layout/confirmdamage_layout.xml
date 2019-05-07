@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            >
+
+            <View
+                android:layout_centerVertical="true"
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:background="@color/orange" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:text="定损日期时间："
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/lossdate"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_marginLeft="180dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/view_color" />
+
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            >
+
+            <View
+                android:layout_centerVertical="true"
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:background="@color/orange" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:text="定损金额："
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/losssum"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_marginLeft="180dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/view_color" />
+
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            >
+
+            <View
+                android:layout_centerVertical="true"
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:background="@color/orange" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:text="到账日期时间："
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/finishdate"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_marginLeft="180dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/view_color" />
+
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            >
+
+            <View
+                android:layout_centerVertical="true"
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:background="@color/orange" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:text="到账金额："
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/finishsum"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_marginLeft="180dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/button_color" />
+
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            >
+
+            <View
+                android:layout_centerVertical="true"
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:background="@color/orange" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:text="预计交车日期："
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/prerepairdate"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_marginLeft="180dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/view_color" />
+
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            >
+
+            <View
+                android:layout_centerVertical="true"
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:background="@color/orange" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:text="维修完毕日期："
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/finishrepairdate"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_marginLeft="180dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/view_color" />
+
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            >
+
+            <View
+                android:layout_centerVertical="true"
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:background="@color/orange" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp"
+                android:background="@color/white"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:text="维修资料照片："
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <com.example.administrator.lc_dvr.common.utils.HorizontalListView
+            android:id="@+id/repairpicturesList"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+        </com.example.administrator.lc_dvr.common.utils.HorizontalListView>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:background="@color/button_color"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            >
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/confirmDamageLeftBtn"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    style="@style/TvNextButton"
+                    android:text="理赔上传"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    />
+
+               <!-- <Button
+                    android:id="@+id/confirmDamageRightBtn"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    style="@style/TvNextButton"
+                    android:text="微信分享"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    />-->
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

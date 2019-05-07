@@ -1,0 +1,217 @@
+<resources>
+    <string name="N_A">N/A</string>
+    <string name="vdec">vdec</string>
+    <string name="fps">fps</string>
+    <string name="v_cache">v-cache</string>
+    <string name="a_cache">a-cache</string>
+    <string name="load_cost">load-cost</string>
+    <string name="seek_cost">seek_cost</string>
+    <string name="seek_load_cost">seek_load_cost</string>
+    <string name="tcp_speed">tcp_speed</string>
+    <string name="bit_rate">bit_rate</string>
+
+    <string name="media_information">Media Information</string>
+    <string name="mi_player">Player</string>
+    <string name="mi_media">Media</string>
+    <string name="mi_profile_level">Profile level</string>
+    <string name="mi_pixel_format">Pixel format</string>
+    <string name="mi_resolution">Resolution</string>
+    <string name="mi_length">Length</string>
+    <string name="mi_stream_fmt1">Stream #%d</string>
+    <string name="mi_type">Type</string>
+    <string name="mi_language">Language</string>
+    <string name="mi_codec">Codec</string>
+    <string name="mi_frame_rate">Frame rate</string>
+    <string name="mi_bit_rate">Bit rate</string>
+    <string name="mi_sample_rate">Sample rate</string>
+    <string name="mi_channels">Channels</string>
+    <string name="mi__selected_video_track">*</string>
+    <string name="mi__selected_audio_track">*</string>
+    <string name="mi__selected_subtitle_track">*</string>
+
+    <string name="TrackType_video">Video</string>
+    <string name="TrackType_audio">Audio</string>
+    <string name="TrackType_subtitle">Subtitle</string>
+    <string name="TrackType_timedtext">Timed text</string>
+    <string name="TrackType_metadata">Meta data</string>
+    <string name="TrackType_unknown">Unknown</string>
+
+    <string name="VideoView_error_text_invalid_progressive_playback">Invalid progressive playback</string>
+    <string name="VideoView_error_text_unknown">Unknown</string>
+    <string name="VideoView_error_button">OK</string>
+
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+
+    <string name="VideoView_render_none">Render: None</string>
+    <string name="VideoView_render_surface_view">Render: SurfaceView</string>
+    <string name="VideoView_render_texture_view">Render: TextureView</string>
+
+    <string name="VideoView_player_AndroidMediaPlayer">Player: AndroidMediaPlayer</string>
+    <string name="VideoView_player_IjkMediaPlayer">Player: IjkMediaPlayer</string>
+    <string name="VideoView_player_IjkExoMediaPlayer">Player: IjkExoMediaPlayer</string>
+
+    <string name="app_name">旅橙</string>
+    <string name="queding">确定</string>
+    <string name="quxiao">取消</string>
+    <string name="xiazai">下载</string>
+    <string name="bendiwenjian">本地文件</string>
+    <string name="zaiantuichu">再按一次退出</string>
+    <string name="video_error">视频未下载完成无法播放</string>
+
+
+    <string name="daza_rec">行车记录</string>
+    <string name="daza_setting">设置</string>
+    <string name="vioceNowOpen">正在开启录像声音</string>
+    <string name="vioceNowClose">正在关闭录像声音</string>
+    <string name="tip">温馨提示</string>
+    <string name="close">关闭</string>
+    <string name="settingNow">请稍候，正在设置...</string>
+    <string name="stopRecFail">停止录像失败</string>
+    <string name="noSDCard">请插入SD卡</string>
+    <string name="downloadFail">下载失败</string>
+    <string name="filesManagerNow">请稍候，正在打开文件管理界面...</string>
+    <string name="synchronizationTimeSuccess">同步时间成功</string>
+    <string name="synchronizationTimeFail">同步时间失败</string>
+    <string name="reporting_compensation">我的旅橙</string>
+    <string name="my_equipment">旅橙iCamera</string>
+    <string name="lc_preview">预览</string>
+    <string name="lc_setting">设置</string>
+    <string name="lc_delete">删除</string>
+    <string name="device_no_connected">未连接此设备</string>
+    <string name="cannot_delete_device">不能删除当前连接的设备</string>
+    <string name="wifi_name">WIFI名称</string>
+    <string name="wifi_password">WIFI密码</string>
+    <string name="lc_dvr_voice">录像音频设置开关</string>
+    <string name="lc_dvr_format">录像格式设置开关</string>
+    <string name="seek_help">一键求助</string>
+    <string name="notFinishDownload">请先取消当前的下载</string>
+    <string name="recording_tip">录屏功能需要Android5.0以上版本</string>
+    <string name="re_recording">重新录制</string>
+    <string name="view_recording_files">查看文件</string>
+    <string name="lc_video_tip">因视频码流过大，APP在线播放时可能会出现卡顿情况，建议选择720P。</string>
+    <string name="saveRecorderFileNow">事故视频在线截取中...</string>
+    <string name="experience">立即体验</string>
+    <string name="verificationCodeHint">短信验证码</string>
+    <string name="getVerificationCode">获取验证码</string>
+    <string name="phoneNumberHint">请输入手机号</string>
+    <string name="newUser">新用户注册</string>
+    <string name="registerUser">注册</string>
+    <string name="userLanding">登录</string>
+    <string name="unableToLand">遇到问题，无法登录</string>
+    <string name="unitShortcutCodeHint">请输入单位快捷码</string>
+    <string name="agreementHint">我已阅读并遵守</string>
+    <string name="agreementContent">《旅橙用户须知及协议》</string>
+    <string name="protocolContent">旅橙用户须知与协议</string>
+    <string name="dialing">拨打电话</string>
+    <string name="scanTitle">二维码</string>
+    <string name="scanTip">将二维码放入框内，即可自动扫描</string>
+    <string name="driverName">驾驶员姓名</string>
+    <string name="driverNameTip">请输入驾驶员姓名</string>
+    <string name="driverPhone">驾驶员联系方式</string>
+    <string name="driverPhoneTip">请输入驾驶员联系方式</string>
+    <string name="plateNumber">车牌号</string>
+    <string name="plateNumberTip">请输入车牌号</string>
+    <string name="plateNumberImage">车架号照片</string>
+    <string name="driverLicenseImage">驾驶证照片</string>
+    <string name="drivingLicenseImage">行驶证照片</string>
+    <string name="bankImage">被保险人银行卡照片</string>
+    <string name="IDPositiveImage">被保险人身份证正面照片</string>
+    <string name="IDOppositeImage">被保险人身份证反面照片</string>
+    <string name="LocalPrivacy">本地保存</string>
+    <string name="quit">退出登录</string>
+    <string name="privacyFilesTip">以下隐私文件仅存在你的手机中，请放心使用哦</string>
+    <string name="personalInformationPhoto">个人信息照片</string>
+    <string name="onlineSurvey">在线定损</string>
+    <string name="reportTime">报案时间</string>
+    <string name="accidentTime">事故时间</string>
+    <string name="informantName">报案人</string>
+    <string name="informantNameHint">请输入报案人姓名</string>
+    <string name="informantPhone">报案人手机号</string>
+    <string name="informantPhoneHint">请输入报案人手机号(必填)</string>
+    <string name="startReport">立即报案</string>
+    <string name="locationFail">定位失败</string>
+    <string name="accidentTypeSelect">选择事故类型</string>
+    <string name="oneCar">单车</string>
+    <string name="manyCar">多车</string>
+    <string name="accidentResponsibilitySelect">选择事故责任</string>
+    <string name="fullResponsibility">全部责任</string>
+    <string name="mainResponsibility">主要责任</string>
+    <string name="sameResponsibility">同等责任</string>
+    <string name="secondaryResponsibility">次要责任</string>
+    <string name="isWoundedSelect">选择是否有人伤</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="isNormalDrivingSelect">选择车辆是否能正常行驶</string>
+
+
+    <!--   登录注册页面Toast      -->
+    <string name="register_mobile_err">请输入格式为11位数字的手机号码</string>
+
+
+    <string name="thumb_string">thumbnail</string>
+    <string name="filesize">"        "</string>
+    <string name="confirm">Confirm</string>
+    <string name="alert_shutdown">APP will exiting</string>
+    <string name="confirm_shutdown">exit APP</string>
+    <string name="wifi_state">Network Status Change</string>
+    <string name="wifi_disconnected">WiFi disconnected</string>
+    <string name="wifi_reconnected">WIFI U-driver connect error, please restart APP</string>
+    <string name="device_error_title">WIFI U-driver Format</string>
+
+    <string name="shared_disc_connection_title">WIFI U-driver connection results</string>
+    <string name="no_shared_disc">Not yet connected to the WIFI U-driver \nPlease check the phone WiFi settings, And make sure WIFI U-driver near</string>
+
+    <!-- shun add for connect wifi & setting -->
+    <string name="wifiConnectFail">Unable to connect, please confirm whether it is the wrong password</string>
+
+    <string name="ask_format">format SD card</string>
+    <string name="confirm_format">format</string>
+
+
+    <!--  个人信息界面Toast                 -->
+    <string name="personal_info_save_success">以上信息已经成功为您保存在本地</string>
+    <string name="personal_info_upload_success">以上信息已经为您成功上传</string>
+    <string name="personal_info_upload_faild">未上传成功，请稍后再试</string>
+
+    <string name="personal_photo_IDOpposite">身份证反面照片</string>
+    <string name="personal_photo_bank">银行卡照片</string>
+    <string name="personal_photo_drivingLicense">行驶证照片</string>
+    <string name="personal_photo_driverLicense">驾驶证照片</string>
+    <string name="personal_photo_frameNumber">车架号照片</string>
+    <string name="personal_photo_IDPositive">身份证正面照片</string>
+    <string name="personal_info_revise_nothing">您未修改过任何信息</string>
+
+
+    <!--  报案  -->
+    <string name="report_start_failure">未定位到为您的事故专员，无法报案</string>
+    <string name="report_start_demo_failure">未模拟报案成功，请稍后再试</string>
+    <string name="report_start_position_is_null">请输入出险地点</string>
+    <string name="report_start_plateNumber_is_null">请输入车牌号</string>
+    <string name="report_start_informantName_is_null">请输入报案人</string>
+    <string name="report_start_informantPhone_is_null">请输入报案人联系方式</string>
+    <string name="report_start_accidentType_is_null">请选择事故类型</string>
+    <string name="report_start_accidentResponsibility_is_null">请选择事故责任</string>
+    <string name="report_start_isWounded_is_null">请选择是否有人受伤</string>
+    <string name="report_start_isNormalDriving_is_null">请选择车辆是否能正常行驶</string>
+
+
+    <string name="network_off">连接失败，请检查您的网络连接</string>
+
+
+    <!-- 退出提示  -->
+    <string name="personal_info_exit_sure">您确定要退出系统并重新登录吗？</string>
+
+    <string name="title_activity_one_key_help">一键求助</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>
+

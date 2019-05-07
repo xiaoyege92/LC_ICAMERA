@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bottom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--此处的View记得一定是首字母大写的那个-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/view_color"
+        android:layout_above="@+id/menu"
+        android:id="@+id/div"/>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_menu_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <com.example.administrator.lc_dvr.common.utils.BottomMenu
+            android:id="@+id/lc_dvr"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_menu_height"
+            android:layout_weight="1"
+
+            bottom:normalpic="@mipmap/lc_dvr_grey"
+            bottom:presspic="@mipmap/lc_dvr_blue"
+            bottom:text="@string/daza_rec" />
+
+        <com.example.administrator.lc_dvr.common.utils.BottomMenu
+            android:id="@+id/lc_help"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_menu_height"
+            android:layout_weight="1"
+            android:onClick="seekHelp"
+            bottom:normalpic="@mipmap/bigicon2_grey"
+            bottom:presspic="@mipmap/bigicon2_blue"
+            bottom:text="@string/seek_help" />
+
+        <com.example.administrator.lc_dvr.common.utils.BottomMenu
+            android:id="@+id/lc_report"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_menu_height"
+            android:layout_weight="1"
+            bottom:normalpic="@mipmap/lc_report_grey"
+            bottom:presspic="@mipmap/lc_report_blue"
+            bottom:text="@string/reporting_compensation" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lc_neirong"
+        android:layout_above="@+id/div"></RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="33dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dcdcdc">
+
+    </View>
+    <ImageView
+        android:id="@+id/iv_message_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:src="@mipmap/gray_small_bell"/>
+    <TextView
+        android:id="@+id/tv_message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_message_read"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/one_key_gray_text"
+        android:text="通知标题"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxEms="12"
+        android:textSize="11sp"/>
+    <TextView
+        android:id="@+id/tv_message_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:text="2018/11/8 18:25"
+        android:textSize="11sp"
+        android:textColor="@color/bottom_text"/>
+</RelativeLayout>

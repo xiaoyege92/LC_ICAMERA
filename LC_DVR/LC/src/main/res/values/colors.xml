@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray_white">#99ffffff</color>
+    <color name="sky_blue">#00BFFF</color>
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#2198F2</color>
+    <color name="xian_color">#898989</color>
+    <color name="view_color">#B9BCBF</color>
+    <color name="theme_background">#EBEEEF</color>
+    <color name="theme_background2">#FFFFFF</color>
+
+    <color name="control_bar_bg">#77000000</color>
+    <color name="switch_color">#118DCF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="alphablack">#88000000</color>
+    <color name="button_color">#E9ECED</color>
+    <color name="transparent_gray">#CC000000</color>
+    <color name="orange">#FFA500</color><!--橙色 -->
+    <color name="red">#FF0000</color><!--红色 -->
+
+    <!--   Version 3.0.3 修改color   -->
+    <color name="normal_black">#333333</color>
+    <color name="unenable_btn_background">#CCCCCC</color>
+    <color name="unenable_btn_text">#FFFFFF</color>
+    <color name="bottom_text">#999999</color>
+    <color name="right_mark_size">#ff8800</color>
+    <color name="gray_back">#F4F4F4</color>
+    <color name="one_key_gray_text">#666666</color>
+    <color name="view_line">#dcdcdc</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>

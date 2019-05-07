@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_dark"
+        android:paddingTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:drawableStart="@mipmap/back"
+                android:onClick="closeScan"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="10dp"
+                android:text="@string/scanTitle"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        app:qrcv_qrCodeTipText="@string/scanTip"
+        android:id="@+id/zxingview"
+        style="@style/MatchMatch"
+        app:qrcv_animTime="1000"
+        app:qrcv_tipTextMargin="50dp"
+        app:qrcv_isTipTextBelowRect="true"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="#46C827"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="2dp"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_rectWidth="280dp"
+        app:qrcv_scanLineColor="#46C827"
+        app:qrcv_scanLineSize="1dp"
+        app:qrcv_topOffset="100dp" />
+
+</LinearLayout>

@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/gray_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_order"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/gray_back">
+        <TextView
+            android:id="@+id/tv_case_orderid_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/bottom_text"
+            android:textSize="10sp"
+            android:text="订单编号："/>
+        <TextView
+            android:id="@+id/tv_case_orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_case_orderid_pre"
+            android:textColor="@color/bottom_text"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/tv_insurance_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/primary_dark"
+            android:textSize="10sp"
+            android:text="请选择投保公司"/>
+    </RelativeLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_order"
+        android:background="@color/white"
+        android:layout_marginBottom="49dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/reportNumberView"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp" >
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="报案号"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/reportNumber"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bottom_text"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/reportNumberLine"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/view_color" />
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp" >
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="单位名称"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_unit_name"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:layout_marginLeft="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bottom_text"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/view_color" />
+
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp" >
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="事故专员"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_server_name"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:layout_marginLeft="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bottom_text"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:id="@+id/iv_take_phone"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_server_name"
+                    android:src="@mipmap/phone_call"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/view_color" />
+
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp" >
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="@string/reportTime"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/tv_caseid"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/reportTime2"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:layout_marginLeft="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bottom_text"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/view_color" />
+
+            <RelativeLayout
+                android:id="@+id/timeSelecte2"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp" >
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="@string/accidentTime"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/accidentTime2"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:layout_marginLeft="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/normal_black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/unit_detail" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/gray_back" />
+
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp" >
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="@string/informantName"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:imeActionLabel="确定"
+                    android:imeOptions="actionDone"
+                    android:id="@+id/informantName"
+                    android:hint="@string/informantNameHint"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    style="?android:attr/textViewStyle"
+                    android:layout_marginLeft="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/normal_black"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/view_color" />
+
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="@string/informantPhone"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:imeActionLabel="确定"
+                    android:imeOptions="actionDone"
+                    android:id="@+id/informantPhone"
+                    android:hint="@string/informantPhoneHint"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    style="?android:attr/textViewStyle"
+                    android:layout_marginLeft="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/normal_black"
+                    android:inputType="phone"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/gray_back">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/bottom_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="选填信息"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_report_info"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="报案信息"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/unit_detail" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/view_color" />
+
+            <RelativeLayout
+                android:id="@+id/rl_accident_info"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="事故信息"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/unit_detail" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/view_color" />
+            <RelativeLayout
+                android:id="@+id/rl_remark"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:text="备注"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/tv_remark_lately"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="140dp"
+                    android:maxLines="1"
+                    android:textSize="12sp"
+                    android:ellipsize="end"
+                    android:maxEms="12"
+                    android:textColor="@color/bottom_text"/>
+                <TextView
+                    android:id="@+id/tv_remark_lately_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="140dp"
+                    android:maxLines="1"
+                    android:textSize="12sp"
+                    android:ellipsize="end"
+                    android:maxEms="15"
+                    android:textColor="@color/bottom_text"/>
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/unit_detail" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/startReportBtn_layout"
+        android:background="@color/gray_back"
+        android:layout_width="match_parent"
+        android:elevation="2dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/startReportBtn2"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginBottom="5dp"
+            style="@style/TvNextButton2"
+            android:text="一键上传"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

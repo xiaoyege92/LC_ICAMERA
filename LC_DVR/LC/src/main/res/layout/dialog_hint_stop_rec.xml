@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="xxx"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginVertical="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginRight="15dp"
+                android:id="@+id/btn_quxiao"
+                android:layout_width="100dp"
+                android:layout_height="29dp"
+                android:background="@drawable/textview_button_selector_gray"
+                android:text="@string/re_recording"
+                android:textColor="#2196F3"
+                android:textSize="11sp" />
+
+            <Button
+                android:layout_marginLeft="15dp"
+                android:layout_width="100dp"
+                android:layout_height="29dp"
+                android:id="@+id/btn_queding"
+                style="@style/TvNextButton"
+                android:text="@string/view_recording_files"
+                android:textColor="#fff"
+                android:textSize="11sp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
